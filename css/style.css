@@ -1,0 +1,118 @@
+/* -------------------------------------------------------- */
+/* MINI CSS RESET */
+/* -------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------- */
+/* DEFINE VARIABLES */
+/* -------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@1,700&family=Manrope:wght@200&display=swap");
+
+:root {
+  --main-font: "Manrope", sans-serif;
+  --title-font: "Courier Prime", monospace;
+
+  --main-color: white;
+  --secondary-color: #501b1d;
+  --accent: #83677b;
+}
+
+/* -------------------------------------------------------- */
+/* GLOBAL STYLES */
+/* -------------------------------------------------------- */
+
+body {
+  font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+}
+
+/* -------------------------------------------------------- */
+/* YOUR CUSTOM STYLES */
+/* -------------------------------------------------------- */
+
+/* TITLE */
+
+.title {
+  text-align: center;
+  font-weight: 900;
+  margin: 30px;
+}
+
+.title span {
+  color: var(--secondary-color);
+}
+
+.sub {
+  background-color: black;
+  color: white;
+  padding: 8px;
+}
+
+/* THE CARDS */
+
+main {
+  width: 90%;
+  min-width: 310px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .card {
+  width: 28%;
+  min-width: 270px;
+  padding: 5px;
+  border: 2px solid var(--accent);
+  margin: 2%;
+}
+
+main .card h2 {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+}
+
+main .card img {
+  display: block;
+  width: 80%;
+  height: 300px;
+  margin: 8px auto;
+}
+
+main .card p {
+  padding: 5px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact h4 {
+  text-align: center;
+}
+
+@media(max-width: 500px){
+  .title {
+    font-size: 2em;
+  }
+
+  .sub {
+    display: none;
+    margin: 10px;
+  }
+}
+

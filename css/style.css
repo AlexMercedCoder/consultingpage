@@ -28,6 +28,8 @@
 
 body {
   font-family: var(--main-font);
+  width: 90%;
+  margin: 10px auto;
 }
 
 h1,
@@ -64,15 +66,17 @@ h6 {
 /* THE CARDS */
 
 main {
-  width: 90%;
+  width: 95%;
   min-width: 310px;
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 10px auto;
 }
 
 main .card {
   width: 28%;
-  min-width: 270px;
+  min-width: 320px;
   padding: 5px;
   border: 2px solid var(--accent);
   margin: 2%;
@@ -107,12 +111,99 @@ main .card p {
 
 @media(max-width: 500px){
   .title {
-    font-size: 2em;
+    font-size: 1.5em;
+    margin: 0
   }
 
   .sub {
     display: none;
     margin: 10px;
   }
+
+  main {
+    max-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px auto;
+  }
+
+  main .card h2 {
+    font-size: 1.2em;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+  }
+
+  main .card {
+    width: 80%;
+    max-width: 230px;
+    min-width:230px;
+    padding: 2px;
+    border: 2px solid var(--accent);
+    margin: 0 auto;
+  }
+
+  main .card img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 2px auto;
+  }
+
+  .contact h2 {
+    font-size: .6em;
+  }
+  .contact h4 {
+    font-size: .5em;
+  }
 }
 
+@media(max-width: 300px){
+  .title {
+    font-size: 1.5em;
+    margin: 0
+  }
+
+  .sub {
+    display: none;
+    margin: 10px;
+  }
+
+  main {
+    max-width: 220px;
+    min-width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px auto;
+  }
+
+  main .card h2 {
+    font-size: 1.2em;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+  }
+
+  main .card {
+    width: 80%;
+    max-width: 210px;
+    min-width:210px;
+    padding: 2px;
+    border: 2px solid var(--accent);
+    margin: 0 auto;
+  }
+
+  main .card img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 2px auto;
+  }
+
+  .contact h2 {
+    font-size: .6em;
+  }
+  .contact h4 {
+    font-size: .5em;
+  }
+}
